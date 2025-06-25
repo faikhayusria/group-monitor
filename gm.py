@@ -28,9 +28,9 @@ def start():
     fake_names = True if 'fake' in request.args else False
     notification = ''
     if 'success' in request.args:
-        notification = 'Einträge wurden gespeichert!'
+        notification = 'Einträge wurden is gespeichert!'
     if 'cleared' in request.args:
-        notification = 'Einträge wurden gelöscht!'
+        notification = 'Einträge wurden is gelöscht!'
     return render_template('index.html', heading='Gruppen-Monitor',
                            content=build_group_form(groups, fake_names=fake_names), notification=notification)
 
